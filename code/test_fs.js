@@ -8,8 +8,9 @@ module.exports = {
     }
 }
 
-function affichage_dossier(array_dossier, path){
-	let return_array = new Array();
+function affichage_dossier(array_dossier, path, return_array){
+	if(!return_array)
+		return_array = new Array();
     array_dossier.forEach(file =>{
         let path_tmp = path+file+'/'
         if (fs.lstatSync(path_tmp).isDirectory()){
@@ -26,7 +27,7 @@ function affichage_dossier(array_dossier, path){
             array_tmp.forEach(file =>{
                 try{
                     //appel récursif de la fonction pour afficher les sous-dossiers
-                    affichage_dossier(array_tmp, path_tmp);
+                    affichage_dossier(array_tmp, path_tmp, return_array);
                 }catch(error){
                     //le programme retourne une erreur pour les fichiers sans extensions car il les considère comme des dossiers.
                 }
