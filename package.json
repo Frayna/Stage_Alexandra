@@ -1,0 +1,26 @@
+{
+  "name": "stagesamdoc",
+  "version": "1.0.0",
+  "description": "Application en JS utilisant le framework ExpressJS permettant de visualiser l'arborescence des dossiers",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunkieUnicorn/StageSamdoc.git"
+  },
+  "author": "Alexandra Denos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JunkieUnicorn/StageSamdoc/issues"
+  },
+  "homepage": "https://github.com/JunkieUnicorn/StageSamdoc#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "serve-index": "^1.9.1"
+  }
+}

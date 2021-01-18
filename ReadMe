@@ -1,0 +1,2 @@
+Voici ma participation pour la recherche de stagiaire de l'entreprise Samdoc. 
+Le projet fonctionne avec Node.js et utilise le framework ExpressJS (https://expressjs.com/fr/) comme demandé dans l'énoncé de projet. Il utilise également la blibliothèque fs (native à NodeJS) ainsi que des fichiers .ejs.
